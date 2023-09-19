@@ -35,16 +35,6 @@ describe("Crowlar Tasks" , () => {
         //selecting check boxes
         cy.get('#hobbies-checkbox-3').check().should('be.checked')
 
-        /*unselecting the checkbox
-        cy.get('#hobbies-checkbox-3').uncheck().should('not.be.checked') 
-
-        //checking all checkboxes
-        cy.get('.custom-control-input[type="checkbox"]').check().should('be.checked')   //here I used the class and type attribute
-
-        //select 1st and last checkbox
-        cy.get('.custom-control-input[type="checkbox"]').first().check().should('be.checked')
-        cy.get('.custom-control-input[type="checkbox"]').last().check().should('be.checked') */
-
         cy.get('#currentAddress').type('Address 1')
 
         cy.get('#state').click().type('NCR{enter}')

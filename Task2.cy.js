@@ -11,7 +11,7 @@ describe("Crowlar Tasks 2" , () => {
 
         
         cy.get(':nth-child(5) > .element-list > .menu-list > #item-2').click()
-        cy.contains('Resizable box').scrollIntoView()
+        cy.contains('Resizable box').scrollIntoView()                           // check the visibility of the box
 
         cy.wait(2000)
         cy.get('#resizableBoxWithRestriction > .react-resizable-handle')
